@@ -32,7 +32,7 @@ const ContactForm = () => {
       return;
     }
 
-    emailjs.sendForm('service_3to6feh', 'template_ytn396d', e.target, 'SA0aqEAD7HS23h33i')
+    emailjs.sendForm()
       .then((result) => {
         setIsEmailSent(true);
         setFormData({
